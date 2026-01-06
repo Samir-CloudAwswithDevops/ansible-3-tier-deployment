@@ -3,7 +3,7 @@
     name: "{{ backend_image }}"
     source: build
     build:
-      path: "{{ app_path }}/ansible-3-tier-deployment/backend"
+      path: "{{ app_path }}/client"
 
 - name: Run backend container with RDS credentials
   docker_container:
